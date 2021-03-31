@@ -143,7 +143,9 @@ We present two samples with ablation study for conditions described in Table 2 i
 |    **No Speech Consistency Loss**    |    <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/Ablation/p233_to_p259/no_asr.wav"></source> </audio>   |    <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/Ablation/p273_to_p244/no_asr.wav"></source> </audio>  |
 |    **No Norm Consistency Loss**    |    <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/Ablation/p233_to_p259/no_norm.wav"></source> </audio>   |    <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/Ablation/p273_to_p244/no_norm.wav"></source> </audio>  |
 |    **No Adversarial Source Classifier Loss**    |    <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/Ablation/p233_to_p259/no_advcls.wav"></source> </audio>   |    <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/Ablation/p273_to_p244/no_advcls.wav"></source> </audio>  |
+
 ---
+
 ## ESD Dataset
 To demonstrate the ability of converting into stylistic speech, we train another model with 10 English speakers from the [Emotional Speech Dataset](https://github.com/HLTSingapore/Emotional-Speech-Data) (ESD). Our model can convert a neutral reading into an emotional speech. We also demostrate the ability of converting from emotional speech to emotional speech. This shows that our model can be applied to moving dubbing with proper source input. All samples are in 16k Hz. 
 

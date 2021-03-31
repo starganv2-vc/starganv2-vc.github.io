@@ -48,6 +48,42 @@ The converted samples from AUTO-VC are directly taken from the survey above. Bec
 |    **AUTO-VC**   |     <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/VCTK/Seen/M2M/p243xp254/autovc.wav"></source> </audio>    |     <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/VCTK/Seen/M2M/p259xp273/autovc.wav"></source> </audio>     |
 | **StarGANv2-VC** |    <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/VCTK/Seen/M2M/p243xp254/starganv2.wav"></source> </audio>     |    <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/VCTK/Seen/M2M/p259xp273/starganv2.wav"></source> </audio>      |
 
+---
+### Any-to-Many Conversion
+
+Our model can also convert from speakers unseen during training. One sample is shown for each case of any-to-many conversion.
+
+#### Female to Female 
+
+|  |p280 → p228|
+|:--:|:--:|
+|**Source**| <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/VCTK/Unseen/F2F/p280xp228/source.wav"></source> </audio> |
+|**Target**| <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/VCTK/Unseen/F2F/p280xp228/target.wav"></source> </audio> |
+|**Converted**| <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/VCTK/Unseen/F2F/p280xp228/converted.wav"></source> </audio> |
+
+#### Female to Male
+
+|  |p267 → p227|
+|:--:|:--:|
+|**Source**| <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/VCTK/Unseen/F2M/p267xp227/source.wav"></source> </audio> |
+|**Target**| <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/VCTK/Unseen/F2M/p267xp227/target.wav"></source> </audio> |
+|**Converted**| <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/VCTK/Unseen/F2M/p267xp227/converted.wav"></source> </audio> |
+
+#### Male to Female
+
+|  |p286 → p244|
+|:--:|:--:|
+|**Source**| <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/VCTK/Unseen/M2F/p286xp244/source.wav"></source> </audio> |
+|**Target**| <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/VCTK/Unseen/M2F/p286xp244/target.wav"></source> </audio> |
+|**Converted**| <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/VCTK/Unseen/M2F/p286xp244/converted.wav"></source> </audio> |
+
+#### Male to Male
+
+|  |p287 → p273|
+|:--:|:--:|
+|**Source**| <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/VCTK/Unseen/M2M/p287xp273/source.wav"></source> </audio> |
+|**Target**| <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/VCTK/Unseen/M2M/p287xp273/target.wav"></source> </audio> |
+|**Converted**| <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/VCTK/Unseen/M2M/p287xp273/converted.wav"></source> </audio> |
 
 
 

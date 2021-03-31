@@ -1,7 +1,7 @@
 ## VCTK Dataset
 The following audios are converted using our model trained on 20 speakers from VCTK dataset. For a fair comparision to the baseline models, all audios are downsampled to 16k Hz. We demostrate four types of conversion schemes: many-to-many, any-to-many, cross-lingual and singing conversion.
 
-**All utterancens are partially or completely unseen during training, and the results are uncurated (NOT cherry-picked)**. 
+**All utterancens are partially or completely unseen during training, and the results are uncurated (NOT cherry-picked) unless otherwise specified**. 
 
 For more audio samples, please go to our survey used for MOS evaluation [here](https://survey.alchemer.com/s3/6266556/SoundQuality2).  You may have to randomly select some answers before proceeding to the next page.
 
@@ -117,3 +117,15 @@ We show that our model is able to convert to any language from unseen input spea
 |**Converted**| <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/VCTK/Crosslingual/Mandarin/p254.wav"></source> </audio> |
 
 
+---
+
+### Singing Conversion
+
+Lastly, we show our model can do singing conversion even no singing samples are seen during training. Because both the conversion model and vocoder are trained with ony speech data, there are some artifacts that resemble speech patterns. We compare our model results with Polyak et. al. Audio samples from Polyak et. al. are taken directly from their [online supplement page](https://singing-conversion.github.io/). We used the same source and target speakers available in the selected 20 speakers.
+
+|              | VKOW → p259 | MCUR → p233 |
+|:------------:|:-------:|:-------:|
+|    **Source**    |    <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/VCTK/Singing/p259/source.wav"></source> </audio>   |    <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/VCTK/Singing/p233/source.wav"></source> </audio>  |
+|    **Target**   |    <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/VCTK/Singing/p259/target.wav"></source> </audio>   |    <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/VCTK/Singing/p233/target.wav"></source> </audio>  |
+|    **Polyak et. al.**   |    <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/VCTK/Singing/p259/cd.wav"></source> </audio>   |    <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/VCTK/Singing/p233/cd.wav"></source> </audio>  |
+| **StarGANv2-VC** |    <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/VCTK/Singing/p259/starganv2.wav"></source> </audio>   |    <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/VCTK/Singing/p233/starganv2.wav"></source> </audio>  |

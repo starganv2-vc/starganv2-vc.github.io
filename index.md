@@ -131,20 +131,6 @@ Lastly, we show our model can do singing conversion even though **no singing sam
 | **StarGANv2-VC** |    <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/VCTK/Singing/p259/starganv2.wav"></source> </audio>   |    <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/VCTK/Singing/p233/starganv2.wav"></source> </audio>  |
 
 ---
-### Ablation Study
-
-We present two samples with ablation study for conditions described in Table 2 in our paper. 
-
-|              | Sample 1 (p233 → p259) | Sample 2 (p273 → p244) |
-|:------------:|:-------:|:-------:|
-|    **Source**    |    <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/Ablation/p233_to_p259/original.wav"></source> </audio>   |    <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/Ablation/p273_to_p244/original.wav"></source> </audio>  |
-|    **Target**    |    <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/Ablation/p233_to_p259/reference.wav"></source> </audio>   |    <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/Ablation/p273_to_p244/reference.wav"></source> </audio>  |
-|    **No F0 Consistency Loss**    |    <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/Ablation/p233_to_p259/no_F0.wav"></source> </audio>   |    <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/Ablation/p273_to_p244/no_F0.wav"></source> </audio>  |
-|    **No Speech Consistency Loss**    |    <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/Ablation/p233_to_p259/no_asr.wav"></source> </audio>   |    <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/Ablation/p273_to_p244/no_asr.wav"></source> </audio>  |
-|    **No Norm Consistency Loss**    |    <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/Ablation/p233_to_p259/no_norm.wav"></source> </audio>   |    <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/Ablation/p273_to_p244/no_norm.wav"></source> </audio>  |
-|    **No Adversarial Source Classifier Loss**    |    <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/Ablation/p233_to_p259/no_advcls.wav"></source> </audio>   |    <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/Ablation/p273_to_p244/no_advcls.wav"></source> </audio>  |
-
----
 
 ## ESD Dataset
 To demonstrate the ability of converting into stylistic speech, we train another model with 10 English speakers from the [Emotional Speech Dataset](https://github.com/HLTSingapore/Emotional-Speech-Data) (ESD). Our model can convert a neutral reading into an emotional speech. We also demostrate the ability of converting from emotional speech to emotional speech. This shows that our model can be applied to moving dubbing with proper source input. All samples are in 16k Hz. 
@@ -224,5 +210,18 @@ To demonstrate the ability of converting into stylistic speech, we train another
         </tr>
     </tbody>
 </table>
+
+## Ablation Study
+
+We present two samples of ablation study for conditions described in Table 2 in our paper on VCTK dataset.
+
+|              | Sample 1 (p233 → p259) | Sample 2 (p273 → p244) |
+|:------------:|:-------:|:-------:|
+|    **Source**    |    <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/Ablation/p233_to_p259/original.wav"></source> </audio>   |    <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/Ablation/p273_to_p244/original.wav"></source> </audio>  |
+|    **Target**    |    <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/Ablation/p233_to_p259/reference.wav"></source> </audio>   |    <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/Ablation/p273_to_p244/reference.wav"></source> </audio>  |
+|    **No F0 Consistency Loss**    |    <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/Ablation/p233_to_p259/no_F0.wav"></source> </audio>   |    <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/Ablation/p273_to_p244/no_F0.wav"></source> </audio>  |
+|    **No Speech Consistency Loss**    |    <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/Ablation/p233_to_p259/no_ASR.wav"></source> </audio>   |    <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/Ablation/p273_to_p244/no_asr.wav"></source> </audio>  |
+|    **No Norm Consistency Loss**    |    <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/Ablation/p233_to_p259/no_norm.wav"></source> </audio>   |    <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/Ablation/p273_to_p244/no_norm.wav"></source> </audio>  |
+|    **No Adversarial Source Classifier Loss**    |    <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/Ablation/p233_to_p259/no_advcls.wav"></source> </audio>   |    <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/Ablation/p273_to_p244/no_advcls.wav"></source> </audio>  |
 
 

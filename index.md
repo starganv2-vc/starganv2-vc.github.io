@@ -1,5 +1,5 @@
 ## VCTK Dataset
-The following audios are converted using our model trained on 20 speakers from VCTK dataset. For a fair comparison to the baseline models, all audios are downsampled to 16k Hz. We demonstrate four types of conversion schemes: many-to-many, any-to-many, cross-lingual and singing conversion.
+The all of the following audios are converted using **a single model trained on 20 speakers from VCTK dataset**. For a fair comparison to the baseline models, all audios are downsampled to 16k Hz. We demonstrate four types of conversion schemes: many-to-many, any-to-many, cross-lingual and singing conversion.
 
 **All utterances are partially or completely unseen during training, and the results are uncurated (NOT cherry-picked) unless otherwise specified**.
 

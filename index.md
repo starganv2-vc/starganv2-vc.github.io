@@ -157,14 +157,6 @@ To demonstrate the ability of converting into stylistic speech, we train another
 ## JVS Dataset
 [JVS dataset](https://sites.google.com/site/shinnosuketakamichi/research-topics/jvs_corpus) is a multi-speaker Japanese speech dataset that contains both regular and falsetto speech. We train a model with 130 regular speech utterances and 10 falsetto speech utterances from 10 randomly selected speakers. Our model can convert a regular speech into both regular and falsetto voices from a source of regular speech. We also show that our model can do crosslinual conversion with English source speakers from VCTK dataset, albeit trained with only Japanese corpus. All samples are in 24k Hz. 
 
-### Cross-lingual Conversion
-
-|              | Female to Male | Male to Female |
-|:------------:|:-------:|:-------:|
-|    **Source**    |    <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/JVS/crosslingual/F2M/source.wav"></source> </audio>   |   <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/JVS/crosslingual/M2F/source.wav"></source> </audio> |
-|    **Target**   |    <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/JVS/crosslingual/F2M/reference.wav"></source> </audio>   |     <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/JVS/crosslingual/M2F/target.wav"></source> </audio>   |
-| **Converted** |    <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/JVS/crosslingual/F2M/converted.wav"></source> </audio>   |    <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/JVS/crosslingual/M2F/converted.wav"></source>  </audio>  |
-
 ### Female to Male (JVS 084 → JVS 006)
 
 <table style="width: 121%;margin-left: -75px;text-align: center;">
@@ -210,6 +202,15 @@ To demonstrate the ability of converting into stylistic speech, we train another
         </tr>
     </tbody>
 </table>
+
+### Cross-lingual Conversion
+
+|              | Female to Male | Male to Female |
+|:------------:|:-------:|:-------:|
+|    **Source**    |    <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/JVS/crosslingual/F2M/source.wav"></source> </audio>   |   <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/JVS/crosslingual/M2F/source.wav"></source> </audio> |
+|    **Target**   |    <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/JVS/crosslingual/F2M/reference.wav"></source> </audio>   |     <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/JVS/crosslingual/M2F/target.wav"></source> </audio>   |
+| **Converted** |    <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/JVS/crosslingual/F2M/converted.wav"></source> </audio>   |    <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/JVS/crosslingual/M2F/converted.wav"></source>  </audio>  |
+
 
 ## Ablation Study
 

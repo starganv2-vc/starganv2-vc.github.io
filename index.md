@@ -1,4 +1,3 @@
-
 ## VCTK Dataset
 The following audios are converted using our model trained on 20 speakers from VCTK dataset. For a fair comparision to the baseline models, all audios are downsampled to 16k Hz. We demostrate four types of conversion schemes: many-to-many, any-to-many, cross-lingual and singing conversion.
 
@@ -14,10 +13,12 @@ The converted samples from AUTO-VC are directly taken from the survey above. Bec
 
 #### Male to Male
 
-|              | Sample1 | Sample2 |
+|              | Sample1 (p243 → p254) | Sample2 (p259 → p273) |
 |:------------:|:-------:|:-------:|
-|    **Source**    |    <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/VCTK/Seen/M2M/p243xp254/source.wav"></source> </audio>   p243     |    <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/VCTK/Seen/M2M/p259xp273/source.wav"></source> </audio>  p259    |
-|    **Target**    |     <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/VCTK/Seen/M2M/p243xp254/target.wav"></source> </audio>   p254    |     <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/VCTK/Seen/M2M/p259xp273/source.wav"></source> </audio> p273      |
+|    **Source**    |    <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/VCTK/Seen/M2M/p243xp254/source.wav"></source> </audio>   |    <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/VCTK/Seen/M2M/p259xp273/source.wav"></source> </audio>  |
+|    **Target**    |     <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/VCTK/Seen/M2M/p243xp254/target.wav"></source> </audio>   |     <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/VCTK/Seen/M2M/p259xp273/target.wav"></source> </audio> |
 |    **AUTO-VC**   |     <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/VCTK/Seen/M2M/p243xp254/autovc.wav"></source> </audio>    |     <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/VCTK/Seen/M2M/p259xp273/autovc.wav"></source> </audio>     |
 | **StarGANv2-VC** |    <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/VCTK/Seen/M2M/p243xp254/starganv2.wav"></source> </audio>     |    <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/VCTK/Seen/M2M/p259xp273/starganv2.wav"></source> </audio>      |
+
+
 

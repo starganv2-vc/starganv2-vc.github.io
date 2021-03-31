@@ -51,6 +51,8 @@ The converted samples from AUTO-VC are directly taken from the survey above. Bec
 ---
 ### Any-to-Many Conversion
 
+<center>
+
 Our model can also convert from speakers unseen during training. One sample is shown for each case of any-to-many conversion.
 
 #### Female to Female 
@@ -85,5 +87,40 @@ Our model can also convert from speakers unseen during training. One sample is s
 |**Target**| <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/VCTK/Unseen/M2M/p287xp273/target.wav"></source> </audio> |
 |**Converted**| <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/VCTK/Unseen/M2M/p287xp273/converted.wav"></source> </audio> |
 
+</center>
+
+---
+
+### Cross-lingual Conversion
+
+<center>
+
+We show that our model is able to convert to any language from unseen input speakers, even though the model is trained only on English data with English ASR perceptual loss. We use Korean, Japanese and Mandarin as example languages.  
+
+#### Korean
+
+|  |Korean male → VCTK p244|
+|:--:|:--:|
+|**Source**| <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/VCTK/Crosslingual/Korean/source.wav"></source> </audio> |
+|**Target**| <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/VCTK/Crosslingual/Korean/target.wav"></source> </audio> |
+|**Converted**| <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/VCTK/Crosslingual/Korean/p244.wav"></source> </audio> |
+
+#### Japanese
+
+|  |Korean male → VCTK p228|
+|:--:|:--:|
+|**Source**| <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/VCTK/Crosslingual/Japanense/source.wav"></source> </audio> |
+|**Target**| <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/VCTK/Crosslingual/Japanense/target.wav"></source> </audio> |
+|**Converted**| <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/VCTK/Crosslingual/Japanense/p228.wav"></source> </audio> |
+
+#### Mandarin
+
+|  |Mandarin female → VCTK p254|
+|:--:|:--:|
+|**Source**| <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/VCTK/Crosslingual/Mandarin/source.wav"></source> </audio> |
+|**Target**| <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/VCTK/Crosslingual/Mandarin/target.wav"></source> </audio> |
+|**Converted**| <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/VCTK/Crosslingual/Mandarin/p254.wav"></source> </audio> |
+
+</center>
 
 

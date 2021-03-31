@@ -1,4 +1,3 @@
-
 ## VCTK Dataset
 The following audios are converted using our model trained on 20 speakers from VCTK dataset. For a fair comparision to the baseline models, all audios are downsampled to 16k Hz. We demostrate four types of conversion schemes: many-to-many, any-to-many, cross-lingual and singing conversion.
 
@@ -176,7 +175,7 @@ Lastly, we show our model can do singing conversion even though **no singing sam
         </tr>
         <tr>
             <td rowspan=2><audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/JVS/style/M2F/falsetto_010/reference.wav"></source> </audio>(falsetto speech)</td>
-            <td><audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/JVS/style/M2F/falsetto_010/converted.wav"></td>
+            <td><audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/JVS/style/M2F/falsetto_010/converted.wav"></source> </audio></td>
         </tr>
     </tbody>
 </table>

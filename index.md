@@ -90,7 +90,7 @@ Our model can also convert from speakers unseen during training. One sample is s
 ### Cross-lingual Conversion
 
 
-We show that our model is able to convert to any language from unseen input speakers, even though the model is trained only on English data with English ASR perceptual loss. We use Korean, Japanese and Mandarin as example languages.  
+We show that our model is able to convert to any language from unseen input speakers, even though the model is trained **only on English data with English ASR perceptual loss**. We use Korean, Japanese and Mandarin as example languages.  
 
 #### Korean
 

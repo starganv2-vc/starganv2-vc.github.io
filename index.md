@@ -1,3 +1,4 @@
+
 ## VCTK Dataset
 The following audios are converted using our model trained on 20 speakers from VCTK dataset. For a fair comparision to the baseline models, all audios are downsampled to 16k Hz. We demostrate four types of conversion schemes: many-to-many, any-to-many, cross-lingual and singing conversion.
 
@@ -136,7 +137,7 @@ Lastly, we show our model can do singing conversion even though **no singing sam
 
 ### Female to Male (JVS 084 → JVS 006)
 
-<table>
+<table style="width: 121%;margin-left: -75px;text-align: center;">
     <thead>
         <tr>
             <th>Source</th>
@@ -159,7 +160,7 @@ Lastly, we show our model can do singing conversion even though **no singing sam
 
 ### Male to Female (JVS 099 → JVS 010)
 
-<table>
+<table style="width: 121%;margin-left: -75px;text-align: center;">
     <thead>
         <tr>
             <th>Source</th>
@@ -184,5 +185,5 @@ Lastly, we show our model can do singing conversion even though **no singing sam
 |              | Female to Male | Male to Female |
 |:------------:|:-------:|:-------:|
 |    **Source**    |    <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/JVS/crosslingual/F2M/source.wav"></source> </audio>   |   <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/JVS/crosslingual/M2F/source.wav"></source> </audio> |
-|    **Target**   |    <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/JVS/crosslingual/F2M/reference.wav"></source> </audio>   |     <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/JVS/crosslingual/M2F/reference.wav"></source> </audio>   |
+|    **Target**   |    <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/JVS/crosslingual/F2M/target.wav"></source> </audio>   |     <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/JVS/crosslingual/M2F/target.wav"></source> </audio>   |
 | **Converted** |    <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/JVS/crosslingual/F2M/converted.wav"></source> </audio>   |    <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/JVS/crosslingual/M2F/converted.wav"></source>  </audio>  |

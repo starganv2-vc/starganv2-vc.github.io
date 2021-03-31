@@ -102,7 +102,7 @@ We show that our model is able to convert to any language from unseen input spea
 
 #### Japanese
 
-|  |Korean male → p228|
+|  |Japanese male → p228|
 |:--:|:--:|
 |**Source**| <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/VCTK/Crosslingual/Japanense/source.wav"></source> </audio> |
 |**Target**| <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/VCTK/Crosslingual/Japanense/target.wav"></source> </audio> |
@@ -147,12 +147,12 @@ Lastly, we show our model can do singing conversion even though **no singing sam
     <tbody>
         <tr>
             <td rowspan=2><audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/JVS/style/F2M/source_084.wav"></source> </audio> </td>
-            <td><audio controls="controls"> <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/JVS/style/F2M/chest_006/reference.wav">(regular speech)</source> </audio></td>
+            <td><audio controls="controls"> <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/JVS/style/F2M/chest_006/reference.wav"></source> </audio>(regular speech)</td>
             <td><audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/JVS/style/F2M/chest_006/converted.wav"></source> </audio></td>
         </tr>
         <tr>
-            <td rowspan=2><audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/JVS/style/F2M/falsetto_006/reference.wav">(falsetto speech)</td>
-            <td><audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/JVS/style/F2M/falsetto_006/converted.wav"></td>
+            <td rowspan=2><audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/JVS/style/F2M/falsetto_006/reference.wav"></source> </audio>(falsetto speech)</td>
+            <td><audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/JVS/style/F2M/falsetto_006/converted.wav"></source> </audio></td>
         </tr>
     </tbody>
 </table>
@@ -170,11 +170,11 @@ Lastly, we show our model can do singing conversion even though **no singing sam
     <tbody>
         <tr>
             <td rowspan=2><audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/JVS/style/M2F/source.wav"></source> </audio> </td>
-            <td><audio controls="controls"> <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/JVS/style/M2F/chest_010/reference.wav">(regular speech)</source> </audio></td>
+            <td><audio controls="controls"> <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/JVS/style/M2F/chest_010/reference.wav"></source> </audio>(regular speech)</td>
             <td><audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/JVS/style/M2F/chest_010/converted.wav"></source> </audio></td>
         </tr>
         <tr>
-            <td rowspan=2><audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/JVS/style/M2F/falsetto_010/reference.wav">(falsetto speech)</td>
+            <td rowspan=2><audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/JVS/style/M2F/falsetto_010/reference.wav"></source> </audio>(falsetto speech)</td>
             <td><audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/JVS/style/M2F/falsetto_010/converted.wav"></td>
         </tr>
     </tbody>

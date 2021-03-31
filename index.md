@@ -121,7 +121,7 @@ We show that our model is able to convert to any language from unseen input spea
 
 ### Singing Conversion
 
-Lastly, we show our model can do singing conversion even though **no singing samples are seen during training**. Because both the conversion model and vocoder are trained with only speech data, there are some artifacts that resemble speech patterns. We compare our model results with Polyak et. al. Audio samples from Polyak et. al. are taken directly from their [online supplement page](https://singing-conversion.github.io/). We use the same sources from NUS-48 singinng dataset and target speakers available in the selected 20 speakers.
+Lastly, we show our model can do singing conversion even though **no singing samples are seen during training**. Because both the conversion model and vocoder are trained with only speech data, there are some artifacts that resemble speech patterns. We compare our model results with Polyak et. al. Audio samples from Polyak et. al. are taken directly from their [online supplement page](https://singing-conversion.github.io/). We use the same sources from NUS-48 singing dataset and target speakers available in the selected 20 speakers.
 
 |              | VKOW → p259 | MCUR → p233 |
 |:------------:|:-------:|:-------:|
@@ -131,8 +131,43 @@ Lastly, we show our model can do singing conversion even though **no singing sam
 | **StarGANv2-VC** |    <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/VCTK/Singing/p259/starganv2.wav"></source> </audio>   |    <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/VCTK/Singing/p233/starganv2.wav"></source> </audio>  |
 
 ---
+### Ablation Study
+
+We present two samples with ablation study for conditions described in Table 2 in our paper. 
+
+|              | Sample 1 (p233 → p259) | Sample 2 (p273 → p244) |
+|:------------:|:-------:|:-------:|
+|    **Source**    |    <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/Ablation/p233_to_p259/original.wav"></source> </audio>   |    <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/Ablation/p273_to_p244/original.wav"></source> </audio>  |
+|    **Target**    |    <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/Ablation/p233_to_p259/reference.wav"></source> </audio>   |    <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/Ablation/p273_to_p244/reference.wav"></source> </audio>  |
+|    **No F0 Consistency Loss**    |    <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/Ablation/p233_to_p259/no_F0.wav"></source> </audio>   |    <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/Ablation/p273_to_p244/no_F0.wav"></source> </audio>  |
+|    **No Speech Consistency Loss**    |    <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/Ablation/p233_to_p259/no_asr.wav"></source> </audio>   |    <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/Ablation/p273_to_p244/no_asr.wav"></source> </audio>  |
+|    **No Norm Consistency Loss**    |    <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/Ablation/p233_to_p259/no_norm.wav"></source> </audio>   |    <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/Ablation/p273_to_p244/no_norm.wav"></source> </audio>  |
+|    **No Adversarial Source Classifier Loss**    |    <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/Ablation/p233_to_p259/no_advcls.wav"></source> </audio>   |    <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/Ablation/p273_to_p244/no_advcls.wav"></source> </audio>  |
+---
+## ESD Dataset
+To demonstrate the ability of converting into stylistic speech, we train another model with 10 English speakers from the [Emotional Speech Dataset](https://github.com/HLTSingapore/Emotional-Speech-Data) (ESD). Our model can convert a neutral reading into an emotional speech. We also demostrate the ability of converting from emotional speech to emotional speech. This shows that our model can be applied to moving dubbing with proper source input. All samples are in 16k Hz. 
+
+### Emotional to Emotional
+
+|              | Female to Male | Male to Female |
+|:------------:|:-------:|:-------:|
+|    **Source**    |    <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/EMD/F2M/surprise/source.wav"></source> </audio>   |    <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/EMD/M2F/surprise/surprise/source.wav"></source> </audio>  |
+|    **Reference**    |     <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/EMD/F2M/surprise/reference.wav"></source> </audio>   |     <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/EMD/M2F/surprise/surprise/reference.wav"></source> </audio> |
+|    **Converted**    |     <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/EMD/F2M/surprise/converted.wav"></source> </audio>   |     <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/EMD/M2F/surprise/surprise/converted.wav"></source> </audio> |
+
+### Neutral to Emotional
+
+|              | Female to Male | Male to Female |
+|:------------:|:-------:|:-------:|
+|    **Source**    |    <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/EMD/F2M/plain/source.wav"></source> </audio>   |    <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/EMD/M2F/plain/source.wav"></source> </audio>  |
+|    **Reference (neutral)**    |     <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/EMD/F2M/plain/plain/reference.wav"></source> </audio>   |     <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/EMD/M2F/plain/plain/reference.wav"></source> </audio> |
+|    **Converted(neutral)**    |     <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/EMD/F2M/plain/plain/converted.wav"></source> </audio>   |     <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/EMD/M2F/plain/plain/converted.wav"></source> </audio> |
+|    **Reference (emotional)**    |     <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/EMD/F2M/plain/emotional/reference.wav"></source> </audio>   |     <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/EMD/M2F/plain/sad/reference.wav"></source> </audio> |
+|    **Converted (emotional)**    |     <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/EMD/F2M/plain/emotional/converted.wav"></source> </audio>   |     <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/EMD/M2F/plain/sad/converted.wav"></source> </audio> |
+
+---
 ## JVS Dataset
-[JVS dataset](https://sites.google.com/site/shinnosuketakamichi/research-topics/jvs_corpus) is a multi-speaker Japanese speech dataset that contains both regular and falsetto speech. We train another model with 130 regular speech utterances and 10 falsetto speech utterances from 10 randomly selected speakers. Our model can convert a regular speech into both regular and falsetto voices from a source of regular speech. We also show that our model can do crosslinual conversion with English source speakers from VCTK dataset, albeit traiend with only Japanese corpus. All samples are in 24k Hz. 
+[JVS dataset](https://sites.google.com/site/shinnosuketakamichi/research-topics/jvs_corpus) is a multi-speaker Japanese speech dataset that contains both regular and falsetto speech. We train a model with 130 regular speech utterances and 10 falsetto speech utterances from 10 randomly selected speakers. Our model can convert a regular speech into both regular and falsetto voices from a source of regular speech. We also show that our model can do crosslinual conversion with English source speakers from VCTK dataset, albeit trained with only Japanese corpus. All samples are in 24k Hz. 
 
 ### Cross-lingual Conversion
 
@@ -187,3 +222,5 @@ Lastly, we show our model can do singing conversion even though **no singing sam
         </tr>
     </tbody>
 </table>
+
+

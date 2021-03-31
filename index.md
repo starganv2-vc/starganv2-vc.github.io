@@ -9,7 +9,7 @@ For more audio samples, please go to our survey used for MOS evaluation [here](h
 
 ### Many-to-Many Conversion
 
-The converted samples from AUTO-VC are directly taken from the survey above. Because the survey uses different sources for different models in order to prevent the rater from finding out the ground truth, the audio clips shown below are converted from sources for AUTO-VC used in the survey. 
+The converted samples using AUTO-VC are directly taken from the survey above. We use different sources for different models in the survey to prevent the raters from finding out which sample is the ground truth, the audio clips shown below are converted from sources for AUTO-VC, which are different from those shown in the survey.
 
 
 #### Female to Female 

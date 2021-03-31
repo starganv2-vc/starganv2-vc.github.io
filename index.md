@@ -94,7 +94,7 @@ We show that our model is able to convert to any language from unseen input spea
 
 #### Korean
 
-|  |Korean male → VCTK p244|
+|  |Korean male → p244|
 |:--:|:--:|
 |**Source**| <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/VCTK/Crosslingual/Korean/source.wav"></source> </audio> |
 |**Target**| <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/VCTK/Crosslingual/Korean/target.wav"></source> </audio> |
@@ -102,7 +102,7 @@ We show that our model is able to convert to any language from unseen input spea
 
 #### Japanese
 
-|  |Korean male → VCTK p228|
+|  |Korean male → p228|
 |:--:|:--:|
 |**Source**| <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/VCTK/Crosslingual/Japanense/source.wav"></source> </audio> |
 |**Target**| <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/VCTK/Crosslingual/Japanense/target.wav"></source> </audio> |
@@ -110,7 +110,7 @@ We show that our model is able to convert to any language from unseen input spea
 
 #### Mandarin
 
-|  |Mandarin female → VCTK p254|
+|  |Mandarin female → p254|
 |:--:|:--:|
 |**Source**| <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/VCTK/Crosslingual/Mandarin/source.wav"></source> </audio> |
 |**Target**| <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/VCTK/Crosslingual/Mandarin/target.wav"></source> </audio> |
@@ -121,7 +121,7 @@ We show that our model is able to convert to any language from unseen input spea
 
 ### Singing Conversion
 
-Lastly, we show our model can do singing conversion even no singing samples are seen during training. Because both the conversion model and vocoder are trained with ony speech data, there are some artifacts that resemble speech patterns. We compare our model results with Polyak et. al. Audio samples from Polyak et. al. are taken directly from their [online supplement page](https://singing-conversion.github.io/). We used the same source and target speakers available in the selected 20 speakers.
+Lastly, we show our model can do singing conversion even though **no singing samples are seen during training**. Because both the conversion model and vocoder are trained with only speech data, there are some artifacts that resemble speech patterns. We compare our model results with Polyak et. al. Audio samples from Polyak et. al. are taken directly from their [online supplement page](https://singing-conversion.github.io/). We use the same sources from NUS-48 singinng dataset and target speakers available in the selected 20 speakers.
 
 |              | VKOW → p259 | MCUR → p233 |
 |:------------:|:-------:|:-------:|
@@ -129,3 +129,60 @@ Lastly, we show our model can do singing conversion even no singing samples are 
 |    **Target**   |    <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/VCTK/Singing/p259/target.wav"></source> </audio>   |    <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/VCTK/Singing/p233/target.wav"></source> </audio>  |
 |    **Polyak et. al.**   |    <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/VCTK/Singing/p259/cd.wav"></source> </audio>   |    <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/VCTK/Singing/p233/cd.wav"></source> </audio>  |
 | **StarGANv2-VC** |    <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/VCTK/Singing/p259/starganv2.wav"></source> </audio>   |    <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/VCTK/Singing/p233/starganv2.wav"></source> </audio>  |
+
+---
+## JVS Dataset
+[JVS dataset](https://sites.google.com/site/shinnosuketakamichi/research-topics/jvs_corpus) is a multi-speaker Japanese speech dataset that contains both regular and falsetto speech. We train another model with 130 regular speech utterances and 10 falsetto speech utterances from 10 randomly selected speakers. Our model can convert a regular speech into both regular and falsetto voices from a source of regular speech. We also show that our model can do crosslinual conversion with English source speakers from VCTK dataset, albeit traiend with only Japanese corpus. All samples are in 24k Hz. 
+
+### Female to Male (JVS 084 → JVS 006)
+
+<table>
+    <thead>
+        <tr>
+            <th>Source</th>
+            <th>Reference</th>
+            <th>Converted Speech</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan=2><audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/JVS/style/F2M/source_084.wav"></source> </audio> </td>
+            <td><audio controls="controls"> <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/JVS/style/F2M/chest_006/reference.wav">(regular speech)</source> </audio></td>
+            <td><audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/JVS/style/F2M/chest_006/converted.wav"></source> </audio></td>
+        </tr>
+        <tr>
+            <td rowspan=2><audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/JVS/style/F2M/falsetto_006/reference.wav">(falsetto speech)</td>
+            <td><audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/JVS/style/F2M/falsetto_006/converted.wav"></td>
+        </tr>
+    </tbody>
+</table>
+
+### Male to Female (JVS 099 → JVS 010)
+
+<table>
+    <thead>
+        <tr>
+            <th>Source</th>
+            <th>Reference</th>
+            <th>Converted Speech</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan=2><audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/JVS/style/M2F/source.wav"></source> </audio> </td>
+            <td><audio controls="controls"> <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/JVS/style/M2F/chest_010/reference.wav">(regular speech)</source> </audio></td>
+            <td><audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/JVS/style/M2F/chest_010/converted.wav"></source> </audio></td>
+        </tr>
+        <tr>
+            <td rowspan=2><audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/JVS/style/M2F/falsetto_010/reference.wav">(falsetto speech)</td>
+            <td><audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/JVS/style/M2F/falsetto_010/converted.wav"></td>
+        </tr>
+    </tbody>
+</table>
+
+### Cross-lingual Conversion
+|              | Female to Male | Male to Female |
+|:------------:|:-------:|:-------:|
+|    **Source**    |    <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/JVS/crosslingual/F2M/source.wav"></source> </audio>   |   <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/JVS/crosslingual/M2F/source.wav"></source> </audio> |
+|    **Target**   |    <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/JVS/crosslingual/F2M/reference.wav"></source> </audio>   |     <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/JVS/crosslingual/M2F/reference.wav"></source> </audio>   |
+| **Converted** |    <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/JVS/crosslingual/F2M/converted.wav"></source> </audio>   |    <audio controls="controls">  <source type="audio/wav" src="https://raw.githubusercontent.com/starganv2-vc/starganv2-vc.github.io/main/wav/JVS/crosslingual/M2F/converted.wav"></source>  </audio>  |

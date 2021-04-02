@@ -133,7 +133,7 @@ Lastly, we show our model can do singing conversion even though **no singing sam
 ---
 
 ## ESD Dataset
-To demonstrate the ability of converting into stylistic speech, we train another model with 10 English speakers from the [Emotional Speech Dataset](https://github.com/HLTSingapore/Emotional-Speech-Data) (ESD). Our model can convert a neutral reading into an emotional speech. We also demostrate the ability of converting from emotional speech to emotional speech. This shows that our model can be applied to moving dubbing with proper source input. All samples are in 16k Hz. 
+To demonstrate the ability of converting into stylistic speech, we train another model with 10 English speakers from the [Emotional Speech Dataset](https://github.com/HLTSingapore/Emotional-Speech-Data) (ESD). Our model can convert a neutral reading into an emotional speech. We also demostrate the ability of converting from emotional speech to emotional speech. This shows that our model can be applied to movie dubbing with proper source input. All samples are in 16k Hz. 
 
 ### Emotional to Emotional
 

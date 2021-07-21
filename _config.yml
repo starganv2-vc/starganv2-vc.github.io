@@ -1,3 +1,4 @@
 theme: jekyll-theme-cayman
-title: StarGANv2-VC - Audio Demo
-description: Yinghao Li, Ali Zare, Nima Mesgarani
+title: StarGANv2-VC: A Diverse, Unsupervised, Non-parallel Framework forNatural-Sounding Voice Conversion
+description: Yinghao Aaron Li, Ali Zare, Nima Mesgarani
+show_downloads: true
